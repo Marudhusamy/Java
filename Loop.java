@@ -5,9 +5,11 @@ public class Loop {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Loop lp= new Loop();
+		lp.amstrong_number();
 		lp.sum_digits();
 		lp.flowers_count();
-		lp.factorial(5);
+	lp.factorial(5);
+		lp.reverse();
 		lp.find_diveiser(100);
 	int diveiser_count=lp.change_diveiser(100);
 	if(diveiser_count==0)
@@ -22,6 +24,55 @@ public class Loop {
 
 	}
 
+	private void amstrong_number() {
+		// TODO Auto-generated method stub
+		int no=153;
+		int no2=no;
+		int ams=0;
+		int rem=0;
+		while(no>0)
+		{
+			rem=no%10;
+			ams=ams+(rem*rem*rem);
+			no=no/10;
+		}
+		System.out.println(ams);
+		if(no2==ams)
+		{
+			System.out.println("Given number is Amstrong Number");
+		}
+		else
+		{
+			System.out.println("Given number is not Amstrong Number");
+		}
+		
+	}
+
+	private void reverse() {
+		// TODO Auto-generated method stub
+		int no=121;
+		int reverse=0;
+		int no2=no;
+		int rem=0;
+		while(no>0)
+			
+		{
+			rem=no%10;
+			no=no/10;
+			reverse=(reverse*10)+rem;
+		}
+		System.out.println(reverse);
+		if(no2==reverse)
+		{
+			System.out.println("polindrem number");
+		}
+		else
+		{
+			System.out.println("Not polindrem number");
+		}
+		
+	}
+
 	private void sum_digits() {
 		// TODO Auto-generated method stub
 		int no=7864;
@@ -31,6 +82,7 @@ public class Loop {
 		{
 			rem=no%10;
 			no=no/10;
+			//System.out.print(rem);
 			//rem=no%10;
 			sum=sum+rem;
 			
