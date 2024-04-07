@@ -13,8 +13,44 @@ public class Pattern {
 		pn.New_variable();//introduce a new variable
         pn.multiple_pattern();
         pn.pattern4();
+        pn.pattern5();
+        pn.pattern6();
+        
+        
 		
 
+	}
+
+	private void pattern6() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++)
+		{
+			for(int col=1;col<row;col++)
+			{
+				System.out.print(" ");
+				
+			}
+			for(int col=1;col<=6-row;col++)
+			{
+			System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern5() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++)
+		{
+			for(int col=1;col<row;col++)
+			{
+				System.out.print(col+"\t");
+			}
+			System.out.print("* ");
+			System.out.println();
+		}
+		
 	}
 
 	private void pattern4() {
