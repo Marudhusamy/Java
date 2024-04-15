@@ -7,7 +7,136 @@ public class Array_logic {
 		Array_logic al= new Array_logic();
 		al.Bubble_Short();
 		al.Binary_Search();
+		al.Frequency();
+		al.letter_more_one();
+        al.Only_once();
+		al.Highest_char();
+	}
 
+	private void Highest_char() {
+		
+		//Highest occurring character in given String: 
+		String name = "people";
+				             //012
+				int high =0;
+				char high_char = ' '; 
+				char[] ch = name.toCharArray();
+		for(int j =0; j<ch.length; j++)
+		{
+				char letter = ch[j]; //letter = a j = 2
+				int count = 0; 
+			for(int i=0; i<ch.length;i++)// i = 0
+				{
+					if(letter == ch[i]) //j = 2 i = 0
+					{
+						if(j<=i)
+							count++; //count = 2
+						else 
+						{
+							count =0; 
+							break;
+						}
+					}
+				}
+				if(count!=0)
+				{
+					if(count>high)
+					{
+						high = count; 
+						high_char = letter; 
+					}
+				}
+		}
+		System.out.println(high_char + " appeared "+ high + " no of times");
+		}
+	
+
+	private void Only_once() {
+		
+		//Only Once 
+
+				String name = "payilagam";
+				             //012
+				char[] ch = name.toCharArray();
+		for(int j =0; j<ch.length; j++)
+		{
+				char letter = ch[j]; //letter = a j = 2
+				int count = 0; 
+			for(int i=0; i<ch.length;i++)// i = 0
+				{
+					if(letter == ch[i]) //j = 2 i = 0
+					{
+						if(j<=i)
+							count++; //count = 2
+						else 
+						{
+							count =0; 
+							break;
+						}
+					}
+				}
+			if(count==1)
+				System.out.println(letter + " appeared "+ count + " time(s)");
+		}
+		
+	}
+
+	private void letter_more_one() {
+		
+		//Letters appeared more than once:
+
+			String name = "payilagam";
+			             //012
+			char[] ch = name.toCharArray();
+	for(int j =0; j<ch.length; j++)
+	{
+			char letter = ch[j]; //letter = a j = 2
+			int count = 0; 
+		for(int i=0; i<ch.length;i++)// i = 0
+			{
+				if(letter == ch[i]) //j = 2 i = 0
+				{
+					if(j<=i)
+						count++; //count = 2
+					else 
+					{
+						count =0; 
+						break;
+					}
+				}
+			}
+			if(count>1)
+			System.out.println(letter + " appeared "+ count + " time(s)");
+	}
+		
+	}
+
+	private void Frequency() {
+		//Program for frequency of each character:
+		// TODO Auto-generated method stub
+		String name = "chennai";
+        //012
+char[] ch = name.toCharArray();
+for(int j =0; j<ch.length; j++)
+{
+char letter = ch[j]; //letter = a j = 2
+int count = 0; 
+for(int i=0; i<ch.length;i++)// i = 0
+{
+if(letter == ch[i]) //j = 2 i = 0
+{
+	if(j<=i)
+		count++; //count = 2
+	else 
+	{
+		count =0; 
+		break;
+	}
+}
+}
+if(count!=0)
+System.out.println(letter + " appeared "+ count + " time(s)");
+}	
 	}
 
 	private void Binary_Search() {
