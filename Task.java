@@ -24,7 +24,10 @@ public class Task {
 		}
 		
 		
-		
+		int a=56;
+        int b=37;
+        int c=a+b;
+System.out.println(c);
 	
 		
 
