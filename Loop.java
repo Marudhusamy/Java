@@ -21,6 +21,7 @@ public class Loop {
 		{
 			System.out.println("Not prime number");
 		}
+    //prime number and not prime number
 
 	}
 
