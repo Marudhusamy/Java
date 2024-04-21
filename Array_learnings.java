@@ -19,6 +19,7 @@ public class Array_learnings {
 	private void fint_max_secondmax() {
 		// TODO Auto-generated method stub
 		int[] marks= {67,89,90,86,98,96};
+                    //0  1  2  3   4  5
 		int first=marks[0],second=marks[0];
 		for(int i=0;i<marks.length;i++)
 		{
