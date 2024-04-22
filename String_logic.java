@@ -98,6 +98,7 @@ public class String_logic {
 		  //  System.out.println(sb);
 //		    sb = sb.reverse();
 //		    System.out.println(sb);
+//append mean we can add end of string
 
 		    sb.append("rani");
 		    System.out.println(sb);
