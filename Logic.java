@@ -30,7 +30,7 @@ public class Logic {
 		int power=0;
 		while(no>0)
 		{
-			int rem=no%10;
+			int rem=no%10; //111%10
 			decimal=decimal+(rem*(find_power(2,power)));
 			no=no/10;
 			power++;
